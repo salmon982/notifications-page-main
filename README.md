@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Responsive React Notification Page](https://www.frontendmentor.io/solutions/responsive-react-notification-page-rGHZicUFQa)
+- Live Site URL: [Live Site](https://salmon982-react-notification.netlify.app/)
 
 ## My process
 
