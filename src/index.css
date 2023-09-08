@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+#root {
+  background-color: var(--white);
+}
+
+.container {
+  min-height: 100dvh;
+  padding: 1.5em 1em;
+  max-width: 700px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  color: var(--very-dark-blue);
+  font-size: 1.28rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-right: 0.35em;
+}
+
+.notread-count {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 0.4em;
+  padding: 0.025em 0.7em 0.2em 0.7em;
+}
+
+.read-button {
+  color: var(--dark-grayish-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.read-button:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.all-notifications {
+  padding: 2.25em 1em 1.25em 1em;
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: 2.35em;
+  margin-right: 1em;
+}
+
+.notification {
+  display: flex;
+  margin-bottom: 2.75em;
+}
+
+.notification:last-of-type {
+  margin-bottom: 0;
+}
+
+.context {
+  font-size: 0.91rem;
+  margin-bottom: 0.2em;
+}
+
+.name {
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+.name:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.action {
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+}
+
+.object {
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
+}
+
+.object:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.club {
+  font-weight: 800;
+  color: var(--dark-grayish-blue);
+}
+
+.club:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+#message {
+  padding: 1em;
+  border: 1px solid var(--light-grayish-blue-2);
+  color: var(--dark-grayish-blue);
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 0.25em;
+  margin-top: 0.5em;
+  line-height: 1.35em;
+}
+
+#message:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue-1);
+}
+
+.time {
+  font-weight: 500;
+  color: var(--grayish-blue);
+  font-size: 0.88rem;
+}
+
+#chess-img {
+  max-width: 100%;
+  height: 2.5em;
+}
+
+.red-dot {
+  display: inline-block;
+  height: 0.5em;
+  width: 0.5em;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+@media all and (min-width: 800px) {
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    min-height: unset;
+  }
+
+  .title h1 {
+    font-size: 1.575rem;
+    letter-spacing: -0.03em;
+    margin-right: 0.5em;
+  }
+
+  .read-button {
+    font-size: 1rem;
+  }
+
+  .all-notifications {
+    padding: 3em 1em 1.25em 1em;
+  }
+
+  .profile-pic {
+    height: 3em;
+  }
+
+  .notification {
+    margin-bottom: 2.5em;
+  }
+
+  .context {
+    font-size: 1.05rem;
+  }
+
+  #message {
+    font-size: 1rem;
+    margin-top: 0.75em;
+  }
+
+  .time {
+    font-size: 1rem;
+  }
+
+  #chess-img {
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+  }
+}
